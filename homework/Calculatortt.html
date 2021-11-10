@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type=text/css>
+    table{
+        border: 1px solid #c7c7c7;
+        background-color: #dddddd;
+        border-radius: 10px;
+    }
+    button, input{
+        border:1px solid #dddddd;
+        border-radius: 10px;
+        font-size:1.5em; height: 50px;
+        color: #ffffff;
+    }
+    button.key_type1{
+        width: 204px; background-color: 
+        #7b7b7b;
+    }
+    button.key_type2, input.key_type2{
+        width: 100px; background-color: #373737;
+    }
+    button.key_type3, input.key_type3{
+        width: 100px;background-color: #fa960a;
+    }
+    #lcd{
+        background-color: #70c738; font-size: 40px;
+        color: #373737;font-weight: bold;
+        text-align: right; border-radius: 10px;
+        padding: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h2>계산기</h2>
+
+    <table align="center">
+        <tr>
+            <td colspan="4">
+                <div style="width: 410px;overflow: hidden;">
+                <div id=lcd width=100%>123,45</div>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class=key_type1
+                    onclick="backSapce();">Backspace</button>
+            </td>
+            <td colspan="2">
+                <button class="key_type1"
+                    onclick="clearScreen();">C</button>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="2" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="3" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="/" class="key_type3"
+                onclick="inputNum(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="5" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="6" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="x" class="key_type3"
+                onclick="inputNum(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="8" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="9" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="+" class="key_type3"
+                onclick="inputNum(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="=" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="0" class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="." class="key_type2"
+                onclick="inputNum(this.value)"></td>
+            <td><input type="button" value="-" class="key_type3"
+                onclick="inputNum(this.value)"></td>
+
+        </tr>
+    </table>
+</body>
+</html>
